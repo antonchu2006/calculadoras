@@ -13,11 +13,15 @@ opcion = int(input("Elige lo que quieras hacer >> "))
 if opcion == 1:
     num1 = int(input("Elige el primer numero >>"))
     num2 = int(input("Elige el segundo numero >>"))
-    print(suma(num1, num2))
+    result = suma(num1, num2)
 
 elif opcion == 2:
     num1 = int(input("Elige el primer numero >>"))
     num2 = int(input("Elige el segundo numero >>"))
-    print(resta(num1, num2))
+    result = resta(num1, num2)
 else:
     print("numero incorrecto")
+    
+print(result)
+if result == 13:
+    print("agarramela que me crece")
